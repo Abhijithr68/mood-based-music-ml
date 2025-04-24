@@ -1,0 +1,79 @@
+/* Apply the custom background image */
+.login-page {
+    background-image: url('../assets/emotunes-loginpage-background.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Login box with malachite background */
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c9141; /* Malachite Green */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: rgb(9, 9, 9);
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields with white borders */
+  .input-field {
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .input-field::placeholder {
+    color: white;
+  }
+  
+  /* Button style */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    color: #4c9141;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .login-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Error message style */
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Link style */
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

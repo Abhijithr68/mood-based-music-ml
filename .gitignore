@@ -1,0 +1,12 @@
+.vscode
+temp
+models
+myenv
+node_modules
+.env
+.cache
+.react-frontend
+appclone.py
+
+
+

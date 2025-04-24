@@ -1,0 +1,175 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Light background color for the page */
+}
+
+/* Full-Page Background Image */
+.homepage {
+  background-image: url('../assets/emotunes-loginpage-background.png'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding for better mobile responsiveness */
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  background-color: #FFFFFF; /* Solid pure white */
+  text-align: center;
+  padding: 10px 0;
+  border: 2px solid #1ba22f; /* Malachite green border with 2px thickness */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: bold;
+  color: #0bda51; /* Malachite Green */
+  text-transform: uppercase;
+  font-style: italic; /* Italic text style */
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding: 5px 0; /* Vertical padding for better spacing */
+}
+
+/* Centered Box */
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 120px; /* Push below the header */
+  z-index: 0;
+  padding: 20px; /* Add padding for content */
+  text-align: center; /* Center align text inside the box */
+}
+
+/* Profile Icon (Webcam Preview) */
+.profile-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid #0bda51; /* Green border */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the profile picture */
+}
+
+/* Webcam Preview Image */
+.webcam-preview {
+  width: 100%;
+  height: 100%;
+}
+
+/* Capture Button */
+.capture-button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  background-color: #0bda51; /* Malachite Green */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button responsive */
+}
+
+.capture-button:hover {
+  background-color: #08b147; /* Darker Malachite Green */
+}
+
+.capture-button:disabled {
+  background-color: #bbb; /* Disable button style */
+  cursor: not-allowed;
+}
+
+/* Song List Styling */
+.song-list {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+.song-list h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.song-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.song-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.song-info h4 {
+  font-size: 1.2rem;
+  color: #0bda51; /* Green color for song title */
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.song-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.song-card a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem; /* Smaller header size for mobile */
+  }
+
+  .center-box {
+    width: 90%; /* Make center-box width responsive */
+    height: auto; /* Let height adjust automatically */
+  }
+
+  .capture-button {
+    padding: 12px 30px; /* Adjust button size for smaller screens */
+  }
+
+  .song-list {
+    width: 100%;
+  }
+}
