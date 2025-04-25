@@ -14,8 +14,8 @@ CORS(app)  # Enable CORS for the app
 
 # Spotify API authentication
 spotify = Spotify(auth_manager=SpotifyClientCredentials(
-    client_id="e389b15858464e4daa29c730834b7757",  # Replace with your Spotify Client ID
-    client_secret="02d31fb05a1a4bd1ae27824ec353be9b"  # Replace with your Spotify Client Secret
+    client_id="",  # Replace with your Spotify Client ID
+    client_secret=""  # Replace with your Spotify Client Secret
 ))
 # Database setup (ensure the database is already created)
 def get_db():
