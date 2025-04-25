@@ -34,8 +34,6 @@ This system features secure **user authentication** (signup/login), with credent
 
 ## 📸 Screenshots
 
-> ⚠️ *Replace these with your actual GitHub links after uploading screenshots to the `/screenshots/` folder in your repository.*
-
 - **Mood Detection Interface**  
   ![Mood Detection](https://github.com/Abhijithr68/mood-based-music-ml/blob/main/snaps/Screenshot%202025-04-24%20140602.png)
 
